@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160">
+  <rect width="160" height="160" rx="16" fill="#003087"/>
+  <!-- Outer circle -->
+  <circle cx="80" cy="80" r="66" fill="none" stroke="#1a4faa" stroke-width="2"/>
+  <!-- Quadrant cross lines -->
+  <line x1="80" y1="28" x2="80" y2="132" stroke="#ffffff" stroke-width="2" opacity="0.3"/>
+  <line x1="28" y1="80" x2="132" y2="80" stroke="#ffffff" stroke-width="2" opacity="0.3"/>
+  <!-- Quadrant labels -->
+  <text x="54" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#ffffff" opacity="0.5">CHALLENGERS</text>
+  <text x="108" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#ffffff" opacity="0.5">LEADERS</text>
+  <text x="54" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#ffffff" opacity="0.5">NICHE</text>
+  <text x="108" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#ff6b00" font-weight="bold">VISIONARY</text>
+  <!-- Visionary dot (bottom-right quadrant highlighted) -->
+  <circle cx="104" cy="100" r="10" fill="#ff6b00" opacity="0.9"/>
+  <circle cx="104" cy="100" r="5" fill="#ffffff"/>
+  <!-- Other dots for context -->
+  <circle cx="55" cy="50" r="5" fill="#ffffff" opacity="0.3"/>
+  <circle cx="105" cy="48" r="7" fill="#ffffff" opacity="0.3"/>
+  <circle cx="58" cy="100" r="4" fill="#ffffff" opacity="0.3"/>
+</svg>

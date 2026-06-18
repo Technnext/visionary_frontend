@@ -1,0 +1,127 @@
+/* =============================================
+   SERVICES SECTION CSS — Visionary Inspire
+   ============================================= */
+
+.services-section {
+  padding: var(--spacing-4xl) 0;
+  background-color: var(--color-bg-light);
+}
+
+.services-section__container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding-inline: 2rem;
+}
+
+.services-section__footer {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--spacing-3xl);
+}
+
+/* --- Service Card --- */
+.service-card {
+  background-color: var(--color-bg-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-2xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  transition: box-shadow var(--transition-normal),
+              transform var(--transition-normal),
+              border-color var(--transition-normal);
+  height: 100%;
+}
+
+.service-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+  border-color: var(--color-primary-light);
+}
+
+.service-card__icon {
+  width: 52px;
+  height: 52px;
+  background-color: rgba(0, 48, 135, 0.07);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.service-card__icon svg {
+  width: 24px;
+  height: 24px;
+  stroke: var(--color-primary);
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.service-card__category {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.service-card__title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-dark);
+  line-height: var(--line-height-tight);
+}
+
+.service-card__description {
+  font-size: var(--font-size-sm);
+  color: var(--color-muted);
+  line-height: var(--line-height-loose);
+  flex: 1;
+}
+
+.service-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary);
+  margin-top: auto;
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--color-border);
+  transition: color var(--transition-fast);
+}
+
+.service-card__link:hover {
+  color: var(--color-accent);
+}
+
+.service-card__link-arrow {
+  transition: transform var(--transition-fast);
+}
+
+.service-card:hover .service-card__link-arrow {
+  transform: translateX(4px);
+}
+
+/* --- Responsive --- */
+@media (max-width: 1024px) {
+  .services-section__container .card-grid--3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .services-section {
+    padding: var(--spacing-3xl) 0;
+  }
+
+  .services-section__container .card-grid--3 {
+    grid-template-columns: 1fr;
+  }
+}

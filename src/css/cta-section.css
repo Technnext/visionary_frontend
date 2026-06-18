@@ -1,0 +1,126 @@
+/* =============================================
+   CTA SECTION CSS — Visionary Inspire
+   ============================================= */
+
+.cta-section {
+  background-color: var(--color-accent);
+  padding: 7rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle background texture for depth */
+.cta-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 15% 50%, rgba(255, 255, 255, 0.07) 0%, transparent 55%),
+    radial-gradient(circle at 85% 20%, rgba(0, 0, 0, 0.06) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* ─── Banner overrides ───────────────────────────────────────────────────── */
+.cta-section .cta-banner {
+  background-color: transparent;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.cta-section .cta-banner__container {
+  gap: 3.5rem;
+}
+
+/* ─── Typography ─────────────────────────────────────────────────────────── */
+.cta-section .cta-banner__title {
+  font-size: clamp(1.75rem, 3vw, 2.75rem);
+  color: var(--color-white);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  max-width: 720px;
+}
+
+.cta-section .cta-banner__subtitle {
+  font-size: var(--font-size-md);
+  color: rgba(255, 255, 255, 0.88);
+  max-width: 600px;
+  line-height: var(--line-height-loose);
+}
+
+/* ─── Buttons ────────────────────────────────────────────────────────────── */
+.cta-section .cta-banner__actions {
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.cta-section .btn--primary {
+  background-color: var(--color-white);
+  color: var(--color-accent);
+  padding: 0.875rem 2.25rem;
+  font-size: var(--font-size-base);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  transition: background-color var(--transition-fast),
+              transform var(--transition-fast),
+              box-shadow var(--transition-fast);
+}
+
+.cta-section .btn--primary:hover {
+  background-color: rgba(255, 255, 255, 0.93);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
+}
+
+.cta-section .btn--outline-white {
+  padding: 0.875rem 2.25rem;
+  font-size: var(--font-size-base);
+  border-color: rgba(255, 255, 255, 0.65);
+  transition: background-color var(--transition-fast),
+              transform var(--transition-fast),
+              border-color var(--transition-fast);
+}
+
+.cta-section .btn--outline-white:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: var(--color-white);
+  color: var(--color-white);
+  transform: translateY(-2px);
+}
+
+/* ─── Responsive ─────────────────────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .cta-section {
+    padding: 5.5rem 0;
+  }
+
+  .cta-section .cta-banner__container {
+    gap: var(--spacing-2xl);
+  }
+}
+
+@media (max-width: 768px) {
+  .cta-section {
+    padding: var(--spacing-3xl) 0;
+  }
+
+  .cta-section .cta-banner__title {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+  }
+
+  .cta-section .cta-banner__subtitle {
+    font-size: var(--font-size-base);
+  }
+
+  .cta-section .cta-banner__actions {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .cta-section .btn--primary,
+  .cta-section .btn--outline-white {
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+  }
+}

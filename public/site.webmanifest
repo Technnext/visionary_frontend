@@ -1,0 +1,13 @@
+{
+  "name": "Visionary Inspire",
+  "short_name": "Visionary Inspire",
+  "description": "Enterprise Customer Experience & BPO Solutions",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#ffffff",
+  "theme_color": "#003087",
+  "icons": [
+    { "src": "/favicon-32x32.png", "sizes": "32x32", "type": "image/png" },
+    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}

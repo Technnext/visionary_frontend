@@ -1,0 +1,87 @@
+/* =============================================
+   STATS SECTION CSS — Visionary Inspire
+   ============================================= */
+
+.stats-section {
+  position: relative;
+  z-index: 1;
+}
+
+/* Upgrade the shared stats-banner when used inside stats-section */
+.stats-section .stats-banner {
+  background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  padding: 4rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.stats-section .stats-banner__container {
+  gap: 0;
+}
+
+.stats-section .stats-banner__item {
+  padding: 2rem 2.5rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.12);
+  position: relative;
+  transition: background-color var(--transition-normal);
+}
+
+.stats-section .stats-banner__item:hover {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.stats-section .stats-banner__item:last-child {
+  border-right: none;
+}
+
+.stats-section .stats-banner__value {
+  font-size: clamp(2.5rem, 3.5vw, 3.5rem);
+  font-weight: var(--font-weight-bold);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.stats-section .stats-banner__suffix {
+  color: var(--color-accent);
+}
+
+.stats-section .stats-banner__label {
+  font-size: var(--font-size-sm);
+  color: rgba(255, 255, 255, 0.65);
+  letter-spacing: 0.03em;
+  line-height: var(--line-height-normal);
+}
+
+/* ─── Responsive ──────────────────────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .stats-section .stats-banner {
+    padding: 3rem 0;
+  }
+
+  .stats-section .stats-banner__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stats-section .stats-banner__item {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 1.75rem 2rem;
+  }
+
+  .stats-section .stats-banner__item:nth-last-child(-n+2) {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-section .stats-banner__container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .stats-section .stats-banner__item {
+    padding: 1.5rem 1rem;
+  }
+
+  .stats-section .stats-banner__item:nth-child(odd) {
+    border-right: 1px solid rgba(255, 255, 255, 0.12);
+  }
+}

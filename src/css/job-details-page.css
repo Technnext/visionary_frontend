@@ -1,0 +1,453 @@
+/* =============================================
+   JOB DETAILS PAGE CSS — Visionary Inspire
+   ============================================= */
+
+.jdp {
+  min-height: 100vh;
+  background-color: var(--color-bg-light);
+}
+
+/* ─── Hero ───────────────────────────────────────────────────────────────── */
+.jdp-hero {
+  background-color: var(--color-primary);
+  padding: var(--spacing-4xl) 0 var(--spacing-3xl);
+}
+
+.jdp-hero__container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--spacing-xl);
+}
+
+.jdp-hero__breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  font-size: var(--font-size-sm);
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: var(--spacing-xl);
+}
+
+.jdp-hero__breadcrumb a {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.jdp-hero__breadcrumb a:hover {
+  color: var(--color-white);
+}
+
+.jdp-hero__breadcrumb span {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.jdp-hero__dept {
+  display: inline-block;
+  background-color: rgba(255, 107, 0, 0.2);
+  color: var(--color-accent);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  padding: 4px 14px;
+  border-radius: 20px;
+  margin-bottom: var(--spacing-md);
+}
+
+.jdp-hero__title {
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-white);
+  line-height: var(--line-height-tight);
+  margin-bottom: var(--spacing-xl);
+}
+
+.jdp-hero__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-lg);
+}
+
+.jdp-hero__meta-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--font-size-sm);
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.jdp-hero__meta-item svg {
+  width: 15px;
+  height: 15px;
+  stroke: var(--color-accent);
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex-shrink: 0;
+}
+
+/* ─── Body Layout ────────────────────────────────────────────────────────── */
+.jdp-body {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: var(--spacing-4xl) var(--spacing-xl);
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: var(--spacing-3xl);
+  align-items: start;
+}
+
+/* ─── Details Column ─────────────────────────────────────────────────────── */
+.jdp-details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3xl);
+}
+
+.jdp-section {
+  background-color: var(--color-bg-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-2xl);
+}
+
+.jdp-section__title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-dark);
+  margin-bottom: var(--spacing-lg);
+  padding-bottom: var(--spacing-md);
+  border-bottom: 2px solid var(--color-primary);
+  display: inline-block;
+}
+
+.jdp-section p {
+  font-size: var(--font-size-sm);
+  color: var(--color-body);
+  line-height: var(--line-height-loose);
+}
+
+.jdp-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.jdp-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-sm);
+  font-size: var(--font-size-sm);
+  color: var(--color-body);
+  line-height: var(--line-height-loose);
+}
+
+.jdp-list li::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+  flex-shrink: 0;
+  margin-top: 7px;
+}
+
+.jdp-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+}
+
+.jdp-skill {
+  background-color: rgba(0, 48, 135, 0.07);
+  color: var(--color-primary);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  padding: 5px 14px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 48, 135, 0.15);
+}
+
+/* ─── Sidebar ────────────────────────────────────────────────────────────── */
+.jdp-sidebar {
+  position: sticky;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.jdp-info-card {
+  background-color: var(--color-bg-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-xl);
+}
+
+.jdp-info-card__title {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-dark);
+  margin-bottom: var(--spacing-lg);
+}
+
+.jdp-info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--spacing-md);
+  padding: var(--spacing-sm) 0;
+  border-bottom: 1px solid var(--color-border);
+  font-size: var(--font-size-sm);
+}
+
+.jdp-info-row:last-child {
+  border-bottom: none;
+}
+
+.jdp-info-row__label {
+  color: var(--color-muted);
+  flex-shrink: 0;
+}
+
+.jdp-info-row__value {
+  color: var(--color-dark);
+  font-weight: var(--font-weight-medium);
+  text-align: right;
+}
+
+/* ─── Application Form ───────────────────────────────────────────────────── */
+.jdp-form-card {
+  background-color: var(--color-bg-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-2xl);
+}
+
+.jdp-form-card__title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-dark);
+  margin-bottom: var(--spacing-xs);
+}
+
+.jdp-form-card__sub {
+  font-size: var(--font-size-sm);
+  color: var(--color-muted);
+  margin-bottom: var(--spacing-2xl);
+}
+
+.jdp-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.jdp-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-lg);
+}
+
+.jdp-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.jdp-field label {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-dark);
+}
+
+.jdp-field label .jdp-required {
+  color: #dc2626;
+  margin-left: 3px;
+}
+
+.jdp-field input,
+.jdp-field textarea,
+.jdp-field select {
+  padding: 0.65rem var(--spacing-md);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-sm);
+  color: var(--color-dark);
+  background-color: var(--color-bg-white);
+  font-family: inherit;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+  width: 100%;
+}
+
+.jdp-field input:focus,
+.jdp-field textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(0, 48, 135, 0.08);
+}
+
+.jdp-field input.jdp-error,
+.jdp-field textarea.jdp-error {
+  border-color: #dc2626;
+}
+
+.jdp-field textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.jdp-field-error {
+  font-size: var(--font-size-xs);
+  color: #dc2626;
+}
+
+.jdp-file-input {
+  padding: 0.5rem var(--spacing-md) !important;
+  cursor: pointer;
+}
+
+.jdp-file-hint {
+  font-size: var(--font-size-xs);
+  color: var(--color-muted);
+}
+
+.jdp-submit-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 48px;
+  padding: 0 var(--spacing-2xl);
+  background-color: #ff6b00;
+  color: #ffffff;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  font-family: inherit;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  letter-spacing: 0.01em;
+  transition: background-color 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
+  align-self: flex-start;
+  margin-top: var(--spacing-xs);
+}
+
+.jdp-submit-btn svg {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+}
+
+.jdp-submit-btn:hover:not(:disabled) {
+  background-color: #e05e00;
+  box-shadow: 0 4px 12px rgba(255, 107, 0, 0.35);
+  transform: translateY(-1px);
+}
+
+.jdp-submit-btn:focus-visible {
+  outline: 3px solid rgba(255, 107, 0, 0.5);
+  outline-offset: 2px;
+}
+
+.jdp-submit-btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* ─── Success State ──────────────────────────────────────────────────────── */
+.jdp-success {
+  background-color: #f0fdf4;
+  border: 1px solid #86efac;
+  border-radius: var(--radius-md);
+  padding: var(--spacing-2xl);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.jdp-success__icon {
+  width: 56px;
+  height: 56px;
+  background-color: #22c55e;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.jdp-success__icon svg {
+  width: 28px;
+  height: 28px;
+  stroke: white;
+  fill: none;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.jdp-success__title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: #15803d;
+}
+
+.jdp-success__sub {
+  font-size: var(--font-size-sm);
+  color: #166534;
+}
+
+/* ─── Loader/Not Found ───────────────────────────────────────────────────── */
+.jdp-loader-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+}
+
+.jdp-not-found {
+  text-align: center;
+  padding: var(--spacing-4xl);
+}
+
+.jdp-not-found h2 {
+  font-size: var(--font-size-2xl);
+  color: var(--color-dark);
+  margin-bottom: var(--spacing-md);
+}
+
+.jdp-not-found p {
+  color: var(--color-muted);
+  margin-bottom: var(--spacing-xl);
+}
+
+/* ─── Responsive ─────────────────────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .jdp-body {
+    grid-template-columns: 1fr;
+  }
+
+  .jdp-sidebar {
+    position: static;
+    order: -1;
+  }
+}
+
+@media (max-width: 640px) {
+  .jdp-hero__title {
+    font-size: var(--font-size-2xl);
+  }
+
+  .jdp-form-row {
+    grid-template-columns: 1fr;
+  }
+}

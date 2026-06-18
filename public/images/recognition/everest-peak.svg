@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160">
+  <rect width="160" height="160" rx="16" fill="#003087"/>
+  <!-- Outer ring -->
+  <circle cx="80" cy="80" r="68" fill="none" stroke="#1a4faa" stroke-width="2"/>
+  <!-- Mountain peak (PEAK matrix symbol) -->
+  <polyline points="30,115 80,45 130,115" fill="none" stroke="#ff6b00" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <polyline points="52,115 72,75 90,95 110,55 130,95" fill="none" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" opacity="0.5"/>
+  <!-- Summit star -->
+  <circle cx="80" cy="45" r="8" fill="#ff6b00"/>
+  <polygon points="80,38 82,44 88,44 83,48 85,54 80,50 75,54 77,48 72,44 78,44" fill="#ffffff"/>
+  <!-- Base line -->
+  <line x1="25" y1="115" x2="135" y2="115" stroke="#ffffff" stroke-width="2" opacity="0.4"/>
+  <!-- LEADER label -->
+  <text x="80" y="134" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#ff6b00" letter-spacing="2">LEADER</text>
+</svg>

@@ -1,0 +1,250 @@
+/* =============================================
+   SERVICES PAGE CSS — Visionary Inspire
+   ============================================= */
+
+/* --- Page Wrapper --- */
+.services-page {
+  min-height: 100vh;
+}
+
+/* --- Filter Bar --- */
+.services-filter {
+  background-color: var(--color-bg-white);
+  border-bottom: 1px solid var(--color-border);
+  position: sticky;
+  top: var(--navbar-height);
+  z-index: 100;
+}
+
+.services-filter__container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--spacing-xl);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.services-filter__container::-webkit-scrollbar {
+  display: none;
+}
+
+.services-filter__tab {
+  flex-shrink: 0;
+  padding: var(--spacing-md) var(--spacing-lg);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-muted);
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  transition: color var(--transition-fast),
+              border-color var(--transition-fast);
+  white-space: nowrap;
+}
+
+.services-filter__tab:hover {
+  color: var(--color-primary);
+}
+
+.services-filter__tab--active {
+  color: var(--color-primary);
+  font-weight: var(--font-weight-semibold);
+  border-bottom-color: var(--color-accent);
+}
+
+/* --- Services Grid Section --- */
+.services-grid-section {
+  padding: var(--spacing-4xl) 0;
+  background-color: var(--color-bg-light);
+}
+
+.services-grid-section__container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--spacing-xl);
+}
+
+/* --- Service Card (full page variant) --- */
+.service-card-full {
+  background-color: var(--color-bg-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: box-shadow var(--transition-normal),
+              transform var(--transition-normal),
+              border-color var(--transition-normal);
+}
+
+.service-card-full__image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.service-card-full__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.service-card-full:hover .service-card-full__image img {
+  transform: scale(1.04);
+}
+
+.service-card-full:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+  border-color: var(--color-primary-light);
+}
+
+.service-card-full__header {
+  padding: var(--spacing-xl) var(--spacing-xl) 0;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-md);
+}
+
+.service-card-full__icon {
+  width: 52px;
+  height: 52px;
+  background-color: rgba(0, 48, 135, 0.07);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.service-card-full__icon svg {
+  width: 24px;
+  height: 24px;
+  stroke: var(--color-primary);
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.service-card-full__meta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.service-card-full__category {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.service-card-full__title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-dark);
+  line-height: var(--line-height-tight);
+}
+
+.service-card-full__body {
+  padding: var(--spacing-lg) var(--spacing-xl);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.service-card-full__description {
+  font-size: var(--font-size-sm);
+  color: var(--color-muted);
+  line-height: var(--line-height-loose);
+  flex: 1;
+}
+
+.service-card-full__benefits {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.service-card-full__benefit {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  font-size: var(--font-size-xs);
+  color: var(--color-body);
+}
+
+.service-card-full__benefit-dot {
+  width: 6px;
+  height: 6px;
+  background-color: var(--color-accent);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.service-card-full__footer {
+  padding: var(--spacing-md) var(--spacing-xl) var(--spacing-xl);
+  border-top: 1px solid var(--color-border);
+  margin-top: auto;
+}
+
+.service-card-full__link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary);
+  transition: color var(--transition-fast);
+}
+
+.service-card-full__link:hover {
+  color: var(--color-accent);
+}
+
+.service-card-full__link-arrow {
+  transition: transform var(--transition-fast);
+}
+
+.service-card-full:hover .service-card-full__link-arrow {
+  transform: translateX(4px);
+}
+
+/* --- Empty State --- */
+.services-empty {
+  text-align: center;
+  padding: var(--spacing-4xl) 0;
+  color: var(--color-muted);
+  font-size: var(--font-size-md);
+}
+
+/* --- Responsive --- */
+@media (max-width: 1024px) {
+  .services-grid-section__container .card-grid--3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .services-grid-section {
+    padding: var(--spacing-3xl) 0;
+  }
+
+  .services-grid-section__container .card-grid--3 {
+    grid-template-columns: 1fr;
+  }
+}
