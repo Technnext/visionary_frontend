@@ -582,3 +582,18 @@
     width: 100%;
   }
 }
+
+@media (max-width: 480px) {
+  .insights-featured__container,
+  .insights-grid-section__container {
+    padding-inline: var(--spacing-md);
+  }
+
+  .insights-toolbar__container {
+    padding-inline: var(--spacing-md);
+  }
+
+  .insights-featured__image-wrap {
+    min-height: 200px;
+  }
+}

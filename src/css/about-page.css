@@ -531,6 +531,14 @@
     padding: var(--spacing-3xl) 0;
   }
 
+  .about-overview__container,
+  .about-global__container,
+  .about-mission__container,
+  .about-leadership__container,
+  .about-awards__container {
+    padding-inline: var(--spacing-md);
+  }
+
   .about-overview__panel {
     grid-template-columns: 1fr 1fr;
   }
@@ -572,5 +580,10 @@
 
   .about-leadership__container .card-grid--4 {
     grid-template-columns: 1fr;
+  }
+
+  .about-overview__actions .btn {
+    width: 100%;
+    justify-content: center;
   }
 }

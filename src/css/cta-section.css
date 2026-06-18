@@ -124,3 +124,9 @@
     width: 100%;
   }
 }
+
+@media (max-width: 480px) {
+  .cta-section .cta-banner__container {
+    padding-inline: var(--spacing-md);
+  }
+}

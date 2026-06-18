@@ -78,7 +78,7 @@
   }
 
   .stats-section .stats-banner__item {
-    padding: 1.5rem 1rem;
+    padding: 1.25rem 0.75rem;
   }
 
   .stats-section .stats-banner__item:nth-child(odd) {

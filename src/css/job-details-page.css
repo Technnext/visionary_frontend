@@ -451,3 +451,21 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 480px) {
+  .jdp-hero__container {
+    padding-inline: var(--spacing-md);
+  }
+
+  .jdp-body {
+    padding: var(--spacing-3xl) var(--spacing-md);
+  }
+
+  .jdp-hero__title {
+    font-size: 1.5rem;
+  }
+
+  .jdp-submit-btn {
+    width: 100%;
+  }
+}

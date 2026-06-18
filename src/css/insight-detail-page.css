@@ -405,3 +405,39 @@
     align-items: flex-start;
   }
 }
+
+@media (max-width: 480px) {
+  .insight-article__container,
+  .insight-related__container {
+    padding-inline: var(--spacing-md);
+  }
+
+  .insight-article__summary {
+    padding: var(--spacing-md);
+    font-size: var(--font-size-base);
+  }
+
+  .insight-article__content-subheading {
+    font-size: var(--font-size-lg);
+  }
+}
+
+@media (max-width: 480px) {
+  .insight-article__container,
+  .insight-related__container {
+    padding-inline: var(--spacing-md);
+  }
+
+  .insight-article__summary {
+    padding: var(--spacing-md);
+    font-size: var(--font-size-base);
+  }
+
+  .insight-article__content-subheading {
+    font-size: var(--font-size-lg);
+  }
+
+  .jdp-hero__container {
+    padding-inline: var(--spacing-md);
+  }
+}

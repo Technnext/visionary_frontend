@@ -261,6 +261,7 @@
 /* --- Logo Marquee --- */
 .logo-marquee {
   overflow: hidden;
+  overflow-x: clip;
   padding: var(--spacing-2xl) 0;
   background-color: var(--color-bg-white);
   border-top: 1px solid var(--color-border);
@@ -273,6 +274,7 @@
   gap: var(--spacing-3xl);
   animation: marquee 30s linear infinite;
   width: max-content;
+  will-change: transform;
 }
 
 .logo-marquee__track:hover {
@@ -439,6 +441,17 @@
   .testimonials__slider { grid-template-columns: 1fr; }
   .page-hero { padding: var(--spacing-3xl) 0; min-height: auto; }
   .page-hero__title { font-size: var(--font-size-2xl); }
+
+  .cta-banner__actions {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .cta-banner__actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 480px) {
@@ -446,4 +459,20 @@
   .stats-banner__container { grid-template-columns: 1fr; }
   .stats-banner__item { border-bottom: 1px solid rgba(255,255,255,0.15); border-right: none; }
   .stats-banner__item:last-child { border-bottom: none; }
+
+  .page-hero {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .page-hero__container {
+    padding-inline: var(--spacing-md);
+  }
+
+  .page-hero__title {
+    font-size: 1.5rem;
+  }
+
+  .page-hero__description {
+    font-size: var(--font-size-base);
+  }
 }

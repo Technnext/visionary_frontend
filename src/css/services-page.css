@@ -247,4 +247,12 @@
   .services-grid-section__container .card-grid--3 {
     grid-template-columns: 1fr;
   }
+
+  .services-filter__container {
+    padding: 0 var(--spacing-md);
+  }
+
+  .services-grid-section__container {
+    padding-inline: var(--spacing-md);
+  }
 }

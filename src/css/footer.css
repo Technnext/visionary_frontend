@@ -468,4 +468,18 @@
   .footer__newsletter-btn {
     text-align: center;
   }
+
+  .footer__newsletter-inner {
+    padding: 0 var(--spacing-md);
+  }
+
+  .footer__body-inner,
+  .footer__certs-inner,
+  .footer__bottom-inner {
+    padding-inline: var(--spacing-md);
+  }
+
+  .footer__newsletter-input {
+    width: 100%;
+  }
 }

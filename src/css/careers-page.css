@@ -427,10 +427,28 @@
     width: 100%;
     justify-content: flex-end;
   }
+
+  .job-card__panel-footer {
+    flex-direction: column;
+  }
+
+  .job-card__panel-footer .btn {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 480px) {
   .careers-stats__container {
     grid-template-columns: 1fr;
+  }
+
+  .careers-why__container,
+  .careers-jobs__container {
+    padding-inline: var(--spacing-md);
+  }
+
+  .careers-stats__container {
+    padding-inline: var(--spacing-md);
   }
 }

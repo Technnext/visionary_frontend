@@ -1205,6 +1205,10 @@
   .sdp-hero__btn-primary,
   .sdp-hero__btn-secondary { width: 100%; justify-content: center; }
 
+  .sdp-hero__title {
+    font-size: clamp(1.75rem, 7vw, 2.5rem);
+  }
+
   .sdp-challenges,
   .sdp-outcomes,
   .sdp-how,
@@ -1223,6 +1227,41 @@
   .sdp-cta-band__container { padding-inline: 1rem; }
   .sdp-stats-strip__inner  { grid-template-columns: repeat(2, 1fr); }
   .sdp-hero__stats         { grid-template-columns: repeat(2, 1fr); }
+
+  .sdp-hero__title {
+    font-size: clamp(1.5rem, 8vw, 1.875rem);
+  }
+
+  .sdp-hero__summary {
+    font-size: 1rem;
+  }
+
+  .sdp-hero__breadcrumb {
+    margin-bottom: 1.5rem;
+  }
+
+  .sdp-challenge-card {
+    grid-template-columns: 2rem 1fr;
+    padding: 1.25rem;
+    gap: 0.75rem;
+  }
+
+  .sdp-challenge-card__num {
+    font-size: 1.5rem;
+  }
+
+  .sdp-how-step {
+    grid-template-columns: 2.5rem 1fr;
+    gap: 0.75rem;
+  }
+
+  .sdp-how-step__num {
+    font-size: 1.75rem;
+  }
+
+  .sdp-section-title {
+    font-size: clamp(1.375rem, 5vw, 1.875rem);
+  }
 }
 
 /* ─── Mortgage Service Page — overview image ──────────────────────────────── */

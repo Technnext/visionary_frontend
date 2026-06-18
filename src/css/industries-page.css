@@ -279,6 +279,11 @@
   .industries-overview__stats {
     grid-template-columns: 1fr 1fr;
   }
+
+  .industries-overview__container,
+  .industries-grid-section__container {
+    padding-inline: var(--spacing-md);
+  }
 }
 
 @media (max-width: 480px) {

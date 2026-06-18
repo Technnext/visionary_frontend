@@ -132,3 +132,13 @@
     padding: 2rem 1.75rem;
   }
 }
+
+@media (max-width: 480px) {
+  .testimonials-section__container {
+    padding-inline: var(--spacing-md);
+  }
+
+  .testimonials-section .testimonial-card {
+    padding: 1.5rem var(--spacing-md);
+  }
+}

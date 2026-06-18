@@ -156,3 +156,9 @@
     max-width: unset;
   }
 }
+
+@media (max-width: 480px) {
+  .awards-section__container {
+    padding-inline: var(--spacing-md);
+  }
+}

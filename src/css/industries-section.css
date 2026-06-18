@@ -130,3 +130,15 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 480px) {
+  .industries-section__container {
+    padding-inline: var(--spacing-md);
+  }
+}
+
+@media (max-width: 480px) {
+  .industries-section__container {
+    padding-inline: var(--spacing-md);
+  }
+}
