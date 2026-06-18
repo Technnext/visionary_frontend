@@ -437,11 +437,13 @@
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 998;
   opacity: 0;
+  pointer-events: none;
   transition: opacity var(--transition-normal);
 }
 
 .navbar__overlay--visible {
   opacity: 1;
+  pointer-events: auto;
 }
 
 /* ─── Mobile Drawer ──────────────────────────────────────────────────────── */
