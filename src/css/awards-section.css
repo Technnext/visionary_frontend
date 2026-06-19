@@ -152,8 +152,15 @@
     flex-shrink: 0;
   }
 
+  .awards-section .awards__info {
+    min-width: 0;
+    flex: 1;
+  }
+
   .awards-section .awards__title {
     max-width: unset;
+    word-break: break-word;
+    overflow-wrap: break-word;
   }
 }
 
