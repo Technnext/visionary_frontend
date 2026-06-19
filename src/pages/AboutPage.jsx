@@ -92,10 +92,15 @@ function MissionCard({ icon, title, body }) {
 
 function LeaderCard({ name, title, bio, photoUrl, linkedinUrl }) {
   const [imageError, setImageError] = useState(false);
-  const showImage = !!photoUrl?.trim() && !imageError;
+  const hasPhoto =
+    photoUrl &&
+    photoUrl.trim() !== '' &&
+    photoUrl !== 'null' &&
+    photoUrl !== 'undefined' &&
+    !imageError;
   return (
     <div className="leader-card">
-      {showImage && (
+      {hasPhoto && (
         <div className="leader-card__avatar">
           <img
             src={photoUrl}
