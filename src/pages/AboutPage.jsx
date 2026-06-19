@@ -229,7 +229,7 @@ export default function AboutPage() {
               that make a measurable difference.
             </p>
             <div className="about-overview__actions">
-              <Link to="/services" className="btn btn--primary">Our Services</Link>
+              <Link to="/mortgage-services" className="btn btn--primary">Our Services</Link>
               <Link to="/contact" className="btn btn--outline">Get in Touch</Link>
             </div>
           </div>
