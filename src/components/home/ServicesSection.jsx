@@ -6,34 +6,9 @@ import Loader from '../common/Loader';
 import { getServices } from '../../services/homeService';
 import '../../css/services-section.css';
 
-const SERVICE_ICONS = {
-  'customer-experience-management': (
-    <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-  ),
-  'digital-transformation': (
-    <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-  ),
-  'data-and-analytics': (
-    <svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-  ),
-  'intelligent-automation': (
-    <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
-  ),
-  'trust-and-safety': (
-    <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-  ),
-};
-
-const DEFAULT_ICON = (
-  <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-);
-
 function ServiceCard({ slug, title, description, category }) {
   return (
     <div className="service-card">
-      <div className="service-card__icon">
-        {SERVICE_ICONS[slug] || DEFAULT_ICON}
-      </div>
       {category && <span className="service-card__category">{category}</span>}
       <h3 className="service-card__title">{title}</h3>
       <p className="service-card__description">{description}</p>

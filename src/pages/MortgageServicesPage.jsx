@@ -10,10 +10,6 @@ import { getCtaSection } from '../services/ctaSectionService';
 import { getHeroSection } from '../services/heroSectionService';
 import '../css/services-page.css';
 
-const DEFAULT_ICON = (
-  <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-);
-
 const FALLBACK_HERO = {
   eyebrow: 'Mortgage Services',
   title: 'Specialised Financial Services for the Mortgage Industry',
@@ -46,9 +42,6 @@ function MortgageServiceCardFull({ slug, title, description, category }) {
         />
       </div>
       <div className="service-card-full__header">
-        <div className="service-card-full__icon">
-          {DEFAULT_ICON}
-        </div>
         <div className="service-card-full__meta">
           {category && <span className="service-card-full__category">{category}</span>}
           <h3 className="service-card-full__title">{title}</h3>

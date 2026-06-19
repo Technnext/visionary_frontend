@@ -91,17 +91,17 @@ function MissionCard({ icon, title, body }) {
 }
 
 function LeaderCard({ name, title, bio, photoUrl, linkedinUrl }) {
-  const [imgFailed, setImgFailed] = useState(false);
-  const hasPhoto = photoUrl?.trim() && !imgFailed;
+  const [imageError, setImageError] = useState(false);
+  const showImage = !!photoUrl?.trim() && !imageError;
   return (
     <div className="leader-card">
-      {hasPhoto && (
+      {showImage && (
         <div className="leader-card__avatar">
           <img
             src={photoUrl}
             alt={name}
             className="leader-card__avatar-img"
-            onError={() => setImgFailed(true)}
+            onError={() => setImageError(true)}
           />
         </div>
       )}
