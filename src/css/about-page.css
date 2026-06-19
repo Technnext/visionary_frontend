@@ -562,6 +562,47 @@
     grid-template-columns: 1fr;
   }
 
+  /* ── Award card mobile fix ───────────────────────────────────────────── */
+  .award-card {
+    /* card must never exceed the 1fr column width */
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    /* keep logo + content side-by-side but let content shrink */
+    align-items: center;
+    gap: var(--spacing-md);
+  }
+
+  .award-card__logo {
+    /* fixed thumbnail — never grows, never shrinks */
+    flex: 0 0 48px;
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+  }
+
+  .award-card__icon {
+    /* icon fallback: same fixed size as logo */
+    flex: 0 0 40px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .award-card__content {
+    /* takes all remaining width; min-width:0 unlocks shrinking past content size */
+    flex: 1 1 0;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .award-card__title {
+    /* allow long titles to wrap instead of overflowing */
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    font-size: clamp(0.75rem, 3.5vw, var(--font-size-base));
+  }
+
   .about-leadership__container .card-grid--4 {
     grid-template-columns: repeat(2, 1fr);
   }
