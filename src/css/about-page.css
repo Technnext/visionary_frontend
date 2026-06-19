@@ -389,10 +389,6 @@
   color: var(--color-muted);
   line-height: var(--line-height-loose);
   flex: 1;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
 }
 
 .leader-card__footer {
