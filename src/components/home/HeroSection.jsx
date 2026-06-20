@@ -9,7 +9,7 @@ const FALLBACK_HERO = {
   title: 'People, Process & Technology Working as One',
   subtitle: 'Visionary Inspire partners with leading enterprises to deliver customer experience, intelligent automation, and data-driven transformation that creates lasting competitive advantage.',
   primaryButtonText: 'Get in Touch',
-  primaryButtonUrl: '/mortgage-services',
+  primaryButtonUrl: '/contact',
   secondaryButtonText: 'Explore Services',
   secondaryButtonUrl: '/mortgage-services',
 };
@@ -49,7 +49,7 @@ export default function HeroSection() {
       .catch(() => {});
 
     getHeroSection('home')
-      .then((res) => { if (res.data) setHero({ ...res.data, primaryButtonUrl: '/mortgage-services', secondaryButtonUrl: '/mortgage-services' }); })
+      .then((res) => { if (res.data) setHero({ ...res.data, primaryButtonUrl: '/contact', secondaryButtonUrl: '/mortgage-services' }); })
       .catch(() => {});
   }, []);
 
