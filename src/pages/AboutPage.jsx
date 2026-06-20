@@ -39,7 +39,7 @@ const FALLBACK_CTA = {
   primaryButtonText: 'Get in Touch',
   primaryButtonUrl: '/contact',
   secondaryButtonText: 'Explore Services',
-  secondaryButtonUrl: '/services',
+  secondaryButtonUrl: '/mortgage-services',
 };
 
 const FALLBACK_HERO = {
@@ -182,7 +182,7 @@ export default function AboutPage() {
       .catch(() => {});
 
     getCtaSection('about')
-      .then((res) => { if (res.data) setCta(res.data); })
+      .then((res) => { if (res.data) setCta({ ...res.data, secondaryButtonUrl: '/mortgage-services' }); })
       .catch(() => {});
 
     getHeroSection('about')

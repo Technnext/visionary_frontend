@@ -9,7 +9,7 @@ const FALLBACK = {
   primaryButtonText: 'Get in Touch',
   primaryButtonUrl: '/contact',
   secondaryButtonText: 'Explore Services',
-  secondaryButtonUrl: '/services',
+  secondaryButtonUrl: '/mortgage-services',
 };
 
 export default function CTASection() {
@@ -17,7 +17,7 @@ export default function CTASection() {
 
   useEffect(() => {
     getCtaSection('home_main')
-      .then((res) => { if (res.data) setCta(res.data); })
+      .then((res) => { if (res.data) setCta({ ...res.data, secondaryButtonUrl: '/mortgage-services' }); })
       .catch(() => {});
   }, []);
 
