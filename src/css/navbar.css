@@ -4,8 +4,8 @@
 
 :root {
   --navbar-topbar-height: 36px;
-  --navbar-main-height:   64px;
-  --navbar-height:        100px; /* topbar + main */
+  --navbar-main-height:   84px;
+  --navbar-height:        120px; /* topbar + main */
 }
 
 /* ─── Wrapper ────────────────────────────────────────────────────────────── */
@@ -138,14 +138,14 @@
 }
 
 .navbar__logo-img {
-  height: 52px;
+  height: 65px;
   width: auto;
   display: block;
   object-fit: contain;
 }
 
 .navbar__logo-img--drawer {
-  height: 40px;
+  height: 52px;
 }
 
 /* ─── Nav ────────────────────────────────────────────────────────────────── */
@@ -631,10 +631,10 @@
   .navbar__toggle      { display: flex; }
   .navbar__overlay     { display: block; }
   .navbar__drawer      { display: flex; }
-  .navbar__main        { height: 64px; }
+  .navbar__main        { height: 80px; }
 
   :root {
-    --navbar-height: 64px;
+    --navbar-height: 80px;
   }
 }
 
@@ -644,7 +644,7 @@
   }
 
   .navbar__logo-img {
-    height: 40px;
+    height: 56px;
   }
 }
 
